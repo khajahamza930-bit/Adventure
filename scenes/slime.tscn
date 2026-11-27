@@ -1,22 +1,22 @@
-[gd_scene format=3 uid="uid://dqbidlx3oct55"]
+[gd_scene format=3 uid="uid://dwptrg1epgml5"]
 
 [ext_resource type="Texture2D" uid="uid://d13e215jnrno8" path="res://assets/sprites/slime_green.png" id="1_5jc4t"]
 [ext_resource type="Script" uid="uid://0sce3sgp3csm" path="res://scripts/slime.gd" id="1_n6pvg"]
 [ext_resource type="PackedScene" uid="uid://cdgcdslpn8r6i" path="res://scenes/killzone.tscn" id="2_4l1t8"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ppcr1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2gj0"]
 atlas = ExtResource("1_5jc4t")
 region = Rect2(0, 24, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jayke"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6pvg"]
 atlas = ExtResource("1_5jc4t")
 region = Rect2(24, 24, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2002g"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjw23"]
 atlas = ExtResource("1_5jc4t")
 region = Rect2(48, 24, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bratd"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2npkn"]
 atlas = ExtResource("1_5jc4t")
 region = Rect2(72, 24, 24, 24)
 
@@ -24,36 +24,41 @@ region = Rect2(72, 24, 24, 24)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ppcr1")
+"texture": SubResource("AtlasTexture_p2gj0")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jayke")
+"texture": SubResource("AtlasTexture_n6pvg")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2002g")
+"texture": SubResource("AtlasTexture_pjw23")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bratd")
+"texture": SubResource("AtlasTexture_2npkn")
 }],
 "loop": 1,
 "name": &"default",
 "speed": 7.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_u5sy4"]
-size = Vector2(14, 14)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3c5t"]
+size = Vector2(12, 14)
 
-[node name="Slime" type="Node2D" unique_id=63376607]
+[node name="Slime" type="Node2D" unique_id=1030312935]
 script = ExtResource("1_n6pvg")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1275043537]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1500801301]
 sprite_frames = SubResource("SpriteFrames_l3c5t")
 autoplay = "default"
-frame_progress = 0.29983783
+frame_progress = 0.8729035
 
 [node name="Killzone" parent="." unique_id=644955861 instance=ExtResource("2_4l1t8")]
-script = null
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1460173194]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=2124246957]
 position = Vector2(0, 5)
-shape = SubResource("RectangleShape2D_u5sy4")
+shape = SubResource("RectangleShape2D_l3c5t")
+
+[node name="RayCastRight" type="RayCast2D" parent="." unique_id=1845374869]
+target_position = Vector2(12, 1)
+
+[node name="RayCastLeft" type="RayCast2D" parent="." unique_id=1655521585]
+target_position = Vector2(-10, 0)

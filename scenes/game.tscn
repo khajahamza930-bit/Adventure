@@ -5,8 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b5ipthdpgkw4i" path="res://scenes/platform.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://cvrst4jvkeneu" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://cdgcdslpn8r6i" path="res://scenes/killzone.tscn" id="5_iywne"]
-[ext_resource type="PackedScene" uid="uid://dqbidlx3oct55" path="res://scenes/slime.tscn" id="6_p57ef"]
-[ext_resource type="Script" uid="uid://bks6fre6xnx2n" path="res://scenes/slime.gd" id="7_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://dwptrg1epgml5" path="res://scenes/slime.tscn" id="6_p57ef"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_l3c5t"]
 distance = -187.0
@@ -177,10 +176,5 @@ autoplay = &"move"
 [node name="Platform5" parent="Platforms" unique_id=1316781586 instance=ExtResource("3_lnu2h")]
 position = Vector2(1689, 89)
 
-[node name="Slime" parent="." unique_id=63376607 instance=ExtResource("6_p57ef")]
-position = Vector2(862, 98)
-script = ExtResource("7_u5sy4")
-speed = 40
-walk_left = 100.0
-walk_right = 100.0
-wait_time = 1.0
+[node name="Slime" parent="." unique_id=1030312935 instance=ExtResource("6_p57ef")]
+position = Vector2(860, 100)
