@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cvrst4jvkeneu" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://cdgcdslpn8r6i" path="res://scenes/killzone.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://dwptrg1epgml5" path="res://scenes/slime.tscn" id="6_p57ef"]
+[ext_resource type="FontFile" uid="uid://c88i8flqvnidw" path="res://assets/fonts/PixelOperator8.ttf" id="7_u5sy4"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_l3c5t"]
 distance = -187.0
@@ -178,3 +179,24 @@ position = Vector2(1689, 89)
 
 [node name="Slime" parent="." unique_id=1030312935 instance=ExtResource("6_p57ef")]
 position = Vector2(860, 100)
+
+[node name="Labels" type="Node" parent="." unique_id=109660457]
+
+[node name="Label" type="Label" parent="Labels" unique_id=1639992323]
+offset_left = -9.0
+offset_top = 50.0
+offset_right = 153.0
+offset_bottom = 119.0
+theme_override_fonts/font = ExtResource("7_u5sy4")
+theme_override_font_sizes/font_size = 15
+text = "space to jump"
+
+[node name="Label2" type="Label" parent="Labels" unique_id=1369697529]
+offset_left = 2003.0
+offset_top = 98.0
+offset_right = 2209.0
+offset_bottom = 152.0
+theme_override_fonts/font = ExtResource("7_u5sy4")
+text = "Dead end
+Game compleated
+"
