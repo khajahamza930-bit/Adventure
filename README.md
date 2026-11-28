@@ -35,8 +35,8 @@ A 2D pixel platformer made with **Godot 4.7** and **GDScript**. Guide a little k
 
 | | |
 |---|---|
-| ![Level start](screenshots/level1.png) | ![Slime enemy](screenshots/slime.png) |
-| ![Coins](screenshots/coins.png) | ![Water and palms](screenshots/water.png) |
+| ![Ending](screenshots/ending.png) | ![Slime enemy](screenshots/enemy.png) |
+| ![Coins](screenshots/jump.png) | ![Player](screenshots/player.png) |
 
 ## Project structure
 
