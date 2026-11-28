@@ -64,8 +64,9 @@ offset_right = 2217.0
 offset_bottom = 87.0
 theme_override_fonts/font = ExtResource("2_0tnpc")
 theme_override_font_sizes/font_size = 13
-text = "you made it!
-you collected X coin"
+text = "Great job!
+you collected 
+X coin"
 horizontal_alignment = 1
 autowrap_mode = 2
 
@@ -208,15 +209,3 @@ offset_bottom = 119.0
 theme_override_fonts/font = ExtResource("7_u5sy4")
 theme_override_font_sizes/font_size = 15
 text = "space to jump"
-
-[node name="Label2" type="Label" parent="Labels" unique_id=1369697529]
-offset_left = 2029.0
-offset_top = -38.0
-offset_right = 2215.0
-offset_bottom = 35.0
-theme_override_fonts/font = ExtResource("7_u5sy4")
-text = "Dead end
-Game compleated
-"
-horizontal_alignment = 1
-autowrap_mode = 2
