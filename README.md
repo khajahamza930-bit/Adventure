@@ -1,42 +1,67 @@
-## About the game
+# Adventure
 
-**Adventure** is a 2D pixel platformer where you guide a little knight through a colorful world full of danger. Jump across gaps, collect coins, and watch out for slimes patrolling the ground. One wrong step into the water and it's back to the start!
+A 2D pixel platformer made with **Godot 4.7** and **GDScript**. Guide a little knight across the world, collect coins, and avoid the slimes and the water.
 
-I made this game as part of my learning journey in game development, and every level, enemy and sound in it was put together by me step by step.
+![Gameplay](screenshots/gameplay.png)
+
+## Play the game
+
+- **Windows:** download the latest build from the [Releases](../../releases) page, unzip it, and run `Adventure.exe`.
+- **Browser:** play it on itch.io (add your link here).
 
 ## How to play
 
 - Run and jump across the platforms.
 - Collect as many coins as you can.
-- Avoid the slimes. They walk back and forth and stop for a moment at each end, so time your jump carefully.
-- Don't fall into the water. It will send you back to the start.
+- Avoid the slimes. They patrol between two walls and pause at each end, so time your jump.
+- Don't fall into the water. It restarts the level.
 
 ## Controls
 
-- **Move left / right:** Arrow keys (or A / D)
-- **Jump:** Space (or Up arrow)
+| Action | Key |
+|---|---|
+| Move left / right | Arrow keys (or A / D) |
+| Jump | Space (or Up arrow) |
 
 ## Features
 
-- Smooth 2D platformer movement with jumping and running animations
-- Slime enemies that patrol and pause at both ends of their path
+- Player movement with running and jumping animations
+- Slime enemies that walk between two walls and stop at each end
 - Collectable coins with sound effects
-- Dangerous water and pits that restart the level
-- Layered pixel-art world with a background, palm trees and decorations
-- Sound effects for jumping, coins and getting hurt
+- Kill zones in water, pits and on slimes that restart the level
+- Layered tile world (Background and Mid layers) with palm trees and decorations
 
-## Tips
+## Screenshots
 
-- Watch the slime's pattern first, then jump over it when it pauses.
-- Don't rush. Some gaps need a running jump.
+| | |
+|---|---|
+| ![Level start](screenshots/level1.png) | ![Slime enemy](screenshots/slime.png) |
+| ![Coins](screenshots/coins.png) | ![Water and palms](screenshots/water.png) |
 
-## About the project
+## Project structure
 
-- Made with **Godot Engine 4.7**
-- Written in **GDScript**
-- Pixel art tileset and sound assets used in the game
-- Built as a learning project, so new levels and enemies may come later
+- `scenes/` - game, player, platform, coin, killzone and slime scenes
+- `scripts/` - GDScript files for the player, coin, killzone and slime
+- `assets/` - sprites and sounds
+- `screenshots/` - images used in this README
+
+## Run it from source
+
+1. Install [Godot 4.7](https://godotengine.org/download).
+2. Clone this repository.
+3. Open Godot, click **Import**, and select the `project.godot` file.
+4. Press **F5** to run the game.
+
+## Built with
+
+- Godot Engine 4.7.2
+- GDScript
+
+## Credits
+
+- Game made by YOUR NAME
+- Pixel art and sound assets: add the creator's name and link here
 
 ## Feedback
 
-If you find a bug or have an idea to make the game better, please leave a comment below. Every bit of feedback helps me improve. Thanks for playing!
+Found a bug or have an idea? Open an **Issue** on this repository. Thanks for playing!
